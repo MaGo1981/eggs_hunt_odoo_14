@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+
+        <record id="res_partner_view_tree_add_switch" model="ir.ui.view">
+            <field name="name">res_partner_view_tree_add_switch</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='active']" position="after">
+                    <field name="is_participant" optional="hide"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="res_partner_view_search_add_filter" model="ir.ui.view">
+            <field name="name">res_partner_view_search_add_filter</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='inactive']" position="after">
+                   <filter string="Eggs Hunt Participants" name="participants" domain="[('is_participant','=', 1)]"/>
+                   <separator/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

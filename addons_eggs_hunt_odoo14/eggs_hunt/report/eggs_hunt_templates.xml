@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_eggs_hunt">
+            <t t-call="web.external_layout">
+                <t t-set="doc" t-value="doc.with_context(lang=doc.organizer_id.lang)"/>
+            </t>
+            <div class="page">
+                <div class="oe_structure"/>
+                <table style="width:100%">
+                    <tr style="padding-bottom:21px">
+                        <th colspan="2" style="border: 0px hidden;padding-bottom:21px;">
+                            <h2>
+                                <span t-if="doc.name_seq">Eggs Hunt:</span>
+                                <span t-field="doc.name_seq"/>
+                            </h2>
+                        </th>
+                    </tr>
+                    <tr colspan="4">
+                        <td colspan="2">
+                            <div t-if="doc.name">
+                                <strong>Year:</strong>
+                                <span t-field="doc.name"/>
+                            </div>
+                        </td>
+                        <td colspan="4">
+                            <div t-if="doc.user_id">
+                                <strong>User:</strong>
+                                <span t-field="doc.user_id"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr colspan="4">
+                        <td colspan="2" id="last_change_date_time" style="padding-bottom:21px">
+                            <strong t-if="doc.last_change_date_time">Last Change:</strong>
+                            <span t-field="doc.last_change_date_time"/>
+                        </td>
+                    </tr>
+                    <t t-foreach="doc.child_ids" t-as="line">
+                        <tr t-att-class="'bg-200 font-weight-bold o_line_section'">
+                            <td name="td_partner_id">
+                                <span t-field="line.partner_id"/>
+                            </td>
+                            <td name="td_egg_ids">
+                                <td t-foreach='line.egg_ids'
+                                    t-as='color'>
+                                    <span t-esc="color.color_id.name"/>
+                                </td>
+                            </td>
+                        </tr>
+                    </t>
+                    <tr>
+                        <td style="border: 0px hidden;width:10%;width:50%;padding-bottom:41px;">
+                            <span class="col-xs-3 text-center">
+                                <p>Signature1</p>
+                            </span>
+                        </td>
+                        <td style="border: 0px hidden;width:10%;width:50%;padding-bottom:41px">
+                            <span class="col-xs-3 text-center">
+                                <p>Signature2</p>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" style="border: 0px hidden;width:50%;">
+                            <span class="col-xs-3 text-center">
+                                <p style="border: 0px hidden;width:300px;">________________________</p>
+                            </span>
+                        </td>
+                        <td colspan="1" style="border: 0px hidden;width:50%;">
+                            <span class="col-xs-3 text-center">
+                                <p style="border: 0px hidden;width:300px;">________________________</p>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </template>
+
+
+        <template id="report_eggs_hunt_main">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="eggs_hunt.report_eggs_hunt" t-lang="doc.organizer_id.lang"/>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

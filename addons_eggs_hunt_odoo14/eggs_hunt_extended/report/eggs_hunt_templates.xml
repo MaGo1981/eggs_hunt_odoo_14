@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_eggs_hunt_extended" inherit_id="eggs_hunt.report_eggs_hunt">
+            <xpath expr="//td[@id='last_change_date_time']" position="after">
+                <td colspan="4" style="padding-bottom:21px">
+                    <strong t-if="doc.organizer_id">Organizer:</strong>
+                    <span t-field="doc.organizer_id"/>
+                </td>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_Eggs-line_model_tree">
+            <field name="name">view_Eggs_line_model_tree</field>
+            <field name="model">eggs.hunt.line</field>
+            <field name="arch" type="xml">
+                <tree string="Eggs Hunt">
+                    <field name="year"/>
+                    <field name="partner_id"/>
+                    <field name="egg_ids"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_Eggs_model_line_form">
+            <field name="name">view_Eggs_model_line_form"</field>
+            <field name="model">eggs.hunt.line</field>
+            <field name="arch" type="xml">
+                <form string="Eggs Hunt Line Form">
+                    <sheet>
+                        <group colspan="12" col="4">
+                            <field name="partner_id" required="True" colspan="4"/>
+                        </group>
+                        <notebook>
+                            <page string="Colors">
+                                <field name="egg_ids" colspan="4"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="eggs_hunt_line_search" model="ir.ui.view">
+            <field name="name">eggs_hunt_line_search</field>
+            <field name="model">eggs.hunt.line</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="year"/>
+                    <field name="partner_id"/>
+                    <field name="egg_ids"/>
+                    <filter string="2018" name="year2018" domain="[('year','=','2018')]"/>
+                    <filter string="2019" name="year2019" domain="[('year','=','2019')]"/>
+                    <filter string="2020" name="year2020" domain="[('year','=','2020')]"/>
+                    <filter string="Hunt" name="year" domain="" context="{'group_by':'hunt_id'}"/>
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

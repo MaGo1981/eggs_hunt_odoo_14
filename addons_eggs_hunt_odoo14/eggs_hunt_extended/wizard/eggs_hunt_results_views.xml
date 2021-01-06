@@ -1,0 +1,31 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_eggs_hunt_results_wizard_form">
+            <field name="name">view_eggs_hunt_results_wizard_form</field>
+            <field name="model">results.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="results"/>
+                    </group>
+                    <footer>
+                        <button string="Calculate Results" name="calculate_results" colspan="1" type="object"
+                                class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_eggs_hunt_results_wizard" model="ir.actions.act_window">
+            <field name="name">action_eggs_hunt_results_wizard</field>
+            <field name="res_model">results.wizard</field>
+            <field name="binding_model_id" ref="eggs_hunt_extended.model_results_wizard"/>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

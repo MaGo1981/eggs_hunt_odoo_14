@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_eggs_results_tree">
+            <field name="name">view_eggs_results_tree</field>
+            <field name="model">eggs.hunt.results</field>
+            <field name="arch" type="xml">
+                <tree string="Eggs Hunt Calculation">
+                    <field name="name"/>
+                    <field name="egg_count"/>
+                    <field name="hunt_id"/>
+                    <field name="user_id" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_eggs_results_form">
+            <field name="name">view_eggs_results_form</field>
+            <field name="model">eggs.hunt.results</field>
+            <field name="arch" type="xml">
+                <form string="Eggs Hunt Line Form">
+                    <sheet>
+                        <notebook>
+                            <page string="Individual Results">
+                                <field name="name"/>
+                                <field name="egg_count"/>
+                                <field name="hunt_id"/>
+                                <field name="user_id" optional="hide"/>
+                            </page>
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

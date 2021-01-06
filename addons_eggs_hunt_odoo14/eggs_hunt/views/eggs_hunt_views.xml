@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_Eggs_model_tree">
+            <field name="name">view_Eggs_model_tree</field>
+            <field name="model">eggs.hunt</field>
+            <field name="arch" type="xml">
+                <tree string="Eggs Hunt">
+                    <field name="name_seq"/>
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="user_id" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_Eggs_model_form">
+            <field name="name">view_Eggs_model_form"</field>
+            <field name="model">eggs.hunt</field>
+            <field name="arch" type="xml">
+
+                <form string="Eggs Hunt Form">
+                    <header>
+                        <button name="action_draft" type="object" string="Draft" states="done,results"/>
+                        <button name="action_family_results" type="object" string="Calculate Results" states="draft"/>
+                        <button name="action_family_results" type="object" string="Recalculate Results" states="results" id="recalculate"/>
+                        <button name="action_done" type="object" string="Done" states="draft,results"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name_seq" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group colspan="12" col="4">
+                            <field name="name" colspan="2" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="user_id" colspan="2" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                        </group>
+                        <notebook>
+
+                            <page string="Participants" id="lines">
+                                <field name="child_ids" attrs="{'readonly': [('state', '=', 'done')]}"/>
+                            </page>
+                            <page string="Family Results"
+                                  states="results,done"
+                                  id="results">
+                                <field name="calculation_ids" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+
+
+        </record>
+
+        <record model="ir.ui.view" id="view_eggs_hunt_search">
+            <field name="name">view_eggs_hunt_search</field>
+            <field name="model">eggs.hunt</field>
+            <field name="arch" type="xml">
+                <search string="Eggs Hunt">
+                    <field name="name"/>
+                    <field name="user_id"/>
+                    <field name="state"/>
+                    <filter name="state_done" domain="[('state', '=', 'done')]" string="State Done"/>
+                    <group expand="0" string="Group By...">
+                        <filter name="group_by_user" string="User"
+                                domain="[]" context="{'group_by':'user_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="action_Eggs_model">
+            <field name="name">Eggs Hunt</field>
+            <field name="res_model">eggs.hunt</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem name="Eggs Hunt" id="menu_Eggs_model_root" sequence="100"
+                  web_icon="eggs_hunt,static/src/img/icon4.png"/>
+        <menuitem name="Eggs Hunt" id="menu_Eggs_new_hunt_model_root" parent="menu_Eggs_model_root"
+                  sequence="1"/>
+
+        <menuitem action="action_Eggs_model" id="menu_Eggs_model" parent="menu_Eggs_model_root"
+                  sequence="10"/>
+        <menuitem action="action_Eggs_model" id="menu_Eggs_model" parent="menu_Eggs_new_hunt_model_root"
+                  sequence="10"/>
+
+        <record model="ir.actions.act_window" id="action_Eggs_line_color_model">
+            <field name="name">Egg Colors</field>
+            <field name="res_model">egg.color</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Settings" id="menu_Eggs_line_color_model_root" parent="menu_Eggs_model_root"
+                  sequence="101"/>
+        <menuitem id="menu_config_eh" name="Config" parent="menu_Eggs_line_color_model_root" sequence='1'/>
+        <menuitem id="menu_models_eh" name="Models" parent="menu_Eggs_line_color_model_root" sequence='2'/>
+        <menuitem action="action_Eggs_line_color_model" id="menu_Eggs_line_color_model"
+                  parent="menu_models_eh" sequence="8"/>
+
+
+        <record model="ir.actions.act_window" id="action_Eggs_line">
+            <field name="name">Eggs Hunt Line</field>
+            <field name="res_model">eggs.hunt.line</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem action="action_Eggs_line" id="menu_Eggs_line"
+                  parent="menu_models_eh" sequence="9"/>
+
+        <record model="ir.actions.act_window" id="action_Eggs_line_color">
+            <field name="name">Eggs Hunt Line Color</field>
+            <field name="res_model">eggs.hunt.line.color</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_Eggs_line_color" id="menu_Eggs_line_color"
+                  parent="menu_models_eh" sequence="10"/>
+
+
+        <record model="ir.actions.act_window" id="action_Eggs_calculate">
+            <field name="name">Eggs Hunt Calculate</field>
+            <field name="res_model">eggs.hunt.calculate</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem action="action_Eggs_calculate" id="menu_Eggs_calculate"
+                  parent="menu_models_eh" sequence="11"/>
+
+        <record model="ir.actions.act_window" id="action_Eggs_calculate_colors">
+            <field name="name">Eggs Hunt Calculate Colors</field>
+            <field name="res_model">eggs.hunt.calculate.colors</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem action="action_Eggs_calculate_colors" id="menu_Eggs_calculate_colors"
+                  parent="menu_models_eh" sequence="12"/>
+
+        <menuitem action="action_eggs_hunt_settings" id="menu_hunt_settings"
+                  parent="menu_config_eh" sequence="1"/>
+
+        <record model="ir.actions.act_window" id="action_eggs_hunt_participants">
+            <field name="name">Eggs Hunt Participants</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_participants':1}</field>
+            <field name="domain">[]</field>
+        </record>
+
+
+        <menuitem action="action_eggs_hunt_participants" id="menu_eggs_hunt_participants"
+                  parent="menu_Eggs_new_hunt_model_root" sequence="13"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_report_eggs_hunt" model="ir.actions.report">
+            <field name="name">Eggs Hunt Report</field>
+            <field name="model">eggs.hunt</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">eggs_hunt.report_eggs_hunt_main</field>
+            <field name="report_file">eggs_hunt.report_eggs_hunt_main</field>
+            <field name="binding_model_id" ref="eggs_hunt.model_eggs_hunt"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>

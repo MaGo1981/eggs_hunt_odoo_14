@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="view_Eggs_hunt_line_form_extended" model="ir.ui.view">
+            <field name="name">view_Eggs_hunt_line_form_extended</field>
+            <field name="model">eggs.hunt.line</field>
+            <field name="inherit_id" ref="eggs_hunt.view_Eggs-line_model_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr='//field[@name="egg_ids"]' position="attributes">
+                    <attribute name="widget">many2many_tags</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

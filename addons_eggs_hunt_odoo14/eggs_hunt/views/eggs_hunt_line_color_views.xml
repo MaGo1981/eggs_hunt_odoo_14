@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_Eggs_model_line_color_tree">
+            <field name="name">view_Eggs_model_line_color_tree</field>
+            <field name="model">eggs.hunt.line.color</field>
+            <field name="arch" type="xml">
+                <tree string="Eggs Hunt Line Color Tree" editable="bottom">
+                    <field name="color_id"/>
+                    <field name="hunt_id"/>
+                    <field name="child_id"/>
+                    <field name="id" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_Eggs_model_line_color_form">
+            <field name="name">view_Eggs_model_line_color_form"</field>
+            <field name="model">eggs.hunt.line.color</field>
+            <field name="arch" type="xml">
+                <form string="Eggs Hunt Line Color Form">
+                    <sheet>
+                        <notebook>
+                            <page string="Colors">
+                                <field name="color_id"/>
+                                <field name="hunt_id"/>
+                                <field name="child_id"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="eggs_hunt_line_color_search" model="ir.ui.view">
+            <field name="name">eggs_hunt_line_color_search</field>
+            <field name="model">eggs.hunt.line.color</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="color_id"/>
+                    <field name="hunt_id"/>
+                    <field name="child_id"/>
+                    <filter string="No Hunt" name="no_hunt" domain="[('hunt_id','=',False)]"/>
+                    <filter string="2018" name="year2018" domain="[('hunt_id.name','=',2018)]"/>
+                    <filter string="2019" name="year2019" domain="[('hunt_id.name','=',2019)]"/>
+                    <filter string="2020" name="year2020" domain="[('hunt_id.name','=',2020)]"/>
+                    <filter string="Color" name="color" domain="" context="{'group_by':'color_id'}"/>
+                    <filter string="Hunt" name="hunt" domain="" context="{'group_by':'hunt_id'}"/>
+                    <filter string="Lines" name="lines" domain="" context="{'group_by':'child_id'}"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

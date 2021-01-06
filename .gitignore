@@ -1,0 +1,9 @@
+*.swp
+*.pyc
+*.idea
+*.settings
+*.project
+*.pydevproject
+*.vscode
+*.DS_Store
+

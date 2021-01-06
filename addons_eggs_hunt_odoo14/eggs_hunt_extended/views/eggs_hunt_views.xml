@@ -1,0 +1,69 @@
+<odoo>
+    <data>
+        <record id="view_Eggs_model_form_extended" model="ir.ui.view">
+            <field name="name">view_Eggs_model_form_extended</field>
+            <field name="model">eggs.hunt</field>
+            <field name="inherit_id" ref="eggs_hunt.view_Eggs_model_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@id='results']" position="after">
+                    <page string="Organizer Signature" name="organizer_signature" attrs="{'invisible': [('results', 'not in', ('both','family','individual'))]}">
+                            <group>
+                                <field name="signed_by"/>
+                                <field name="signed_on"/>
+                                <field name="signature" widget="signature"/>
+                            </group>
+                        </page>
+                    <page string="Instructions" invisible="1">
+                        <group>
+                            <field name="result_type" widget="radio" string="Attachment Type"/>
+                            <field name="result_google_doc" placeholder="Google Doc Link" string="Google Doc"
+                                   attrs="{'invisible':  [('result_type', '!=', 'google_doc')]}"/>
+                            <field name="note" string="Note" placeholder="Write or copy textual results"
+                                   attrs="{'invisible':  [('result_type', '!=', 'text')]}"/>
+                        </group>
+                    </page>
+                </xpath>
+                <xpath expr="//field[@name='user_id']" position="after">
+                    <field name="last_change_date_time" colspan="2" readonly="1"/>
+                    <field name="organizer_id" colspan="2"/>
+                    <field name="results" colspan="2" invisible="1"/>
+                </xpath>
+                <xpath expr="//button[@name='action_done']" position="before">
+                    <button name="%(action_eggs_hunt_results_wizard)d" string="Calculate Results" type="action" class="oe_highlight" icon="fa-tasks" states="draft"/>
+                    <button name="%(action_eggs_hunt_results_wizard)d" string="Recalculate Results" type="action" class="oe_highlight" icon="fa-tasks" states="results,done"/>
+                </xpath>
+                <xpath expr='//page[@id="results"]' position="before">
+                    <page string="Individual Results"
+                          attrs="{'invisible': [('results', 'in', ('none','family'))]}"
+                          id="individual_results">
+                        <field name="result_ids" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    </page>
+                </xpath>
+                <xpath expr='//page[@id="results"]' position="replace">
+                    <page string="Family Results"
+                          attrs="{'invisible': [('results', 'in', ('none','individual'))]}"
+                          id="results">
+                        <field name="calculation_ids" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    </page>
+                </xpath>
+                <xpath expr='//button[@name="action_family_results"]' position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+                <xpath expr='//button[@id="recalculate"]' position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_Eggs_model_tree_extended" model="ir.ui.view">
+            <field name="name">view_Eggs_model_tree_extended</field>
+            <field name="model">eggs.hunt</field>
+            <field name="inherit_id" ref="eggs_hunt.view_Eggs_model_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr='//field[@name="name_seq"]' position="after">
+                    <field name="organizer_id" optional="hide"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

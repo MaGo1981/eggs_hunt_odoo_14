@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_egg_color_tree">
+            <field name="name">view_egg_color_tree</field>
+            <field name="model">egg.color</field>
+            <field name="arch" type="xml">
+                <tree string="Egg Color Tree" editable="top">
+                    <field name="id" optional="hide"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_egg_color_form">
+            <field name="name">view_egg_color_form"</field>
+            <field name="model">egg.color</field>
+            <field name="arch" type="xml">
+
+                <form string="Egg Color Form">
+                    <field name="id" optional="hide"/>
+                    <field name="name"/>
+                </form>
+            </field>
+
+
+        </record>
+    </data>
+</odoo>

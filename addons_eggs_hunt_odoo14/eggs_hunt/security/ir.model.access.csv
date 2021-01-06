@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_eggs_hunt,access_eggs_hunt,model_eggs_hunt,,1,1,1,1
+access_eggs_hunt_line,access_eggs_hunt_line,model_eggs_hunt_line,,1,1,1,1
+access_eggs_hunt_line_color,access_eggs_hunt_line_color,model_eggs_hunt_line_color,,1,1,1,1
+access_eggs_hunt_calculate,access_eggs_hunt_calculate,model_eggs_hunt_calculate,,1,1,1,1
+access_eggs_hunt_calculate_colors,access_eggs_hunt_calculate_colors,model_eggs_hunt_calculate_colors,,1,1,1,1
+access_egg_color,access_egg_color,model_egg_color,,1,1,1,1
+access_hunt_config_settings,access_hunt_config_settings,model_hunt_config_settings,,1,1,1,1
+
