@@ -21,7 +21,11 @@ class ResultsWizard(models.TransientModel):
             return hunt.action_family_results()
         elif self.results == 'both':
             hunt.write({'results': self.results})
+<<<<<<< HEAD
             return (hunt.action_individual_results(), hunt.action_family_results())
+=======
+            return (hunt.action_family_results(), hunt.action_individual_results()) # family must be first to get the child_ids.
+>>>>>>> test-19
         else:
             raise UserError(_('Please select the results you want to calculate!'))
 
