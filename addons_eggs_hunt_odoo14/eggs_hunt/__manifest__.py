@@ -15,6 +15,7 @@
     'sales_team',
     'portal',
     'web',
+    'utm',
    ],
   'data': [
       'views/hunt_config_settings_views.xml',
