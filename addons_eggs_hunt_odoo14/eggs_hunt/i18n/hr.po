@@ -1,0 +1,1068 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eggs_hunt
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-09 09:13+0000\n"
+"PO-Revision-Date: 2021-01-09 09:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_colors_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_color_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_search
+msgid "2018"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_colors_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_color_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_search
+msgid "2019"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_colors_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_color_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_search
+msgid "2020"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.report_eggs_hunt
+msgid "<strong>User:</strong>"
+msgstr "<strong>Korisnik:</strong>"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.report_eggs_hunt
+msgid "<strong>Year:</strong>"
+msgstr "<strong>Godina:</strong>"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__unsplash_access_key
+msgid "Access Key"
+msgstr "Pristupni ključ"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__access_warning
+msgid "Access warning"
+msgstr "Pristupno upozorenje"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_needaction
+msgid "Action Needed"
+msgstr "Potrebna akcija"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__activity_ids
+msgid "Activities"
+msgstr "Aktivnosti"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Dekoracija iznimne aktivnosti"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__activity_state
+msgid "Activity State"
+msgstr "Status Aktivnosti"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikona tipa aktivnosti"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__snailmail_cover
+msgid "Add a Cover Page"
+msgstr "Dodaj naslovnu stranicu"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__group_sale_pricelist
+msgid "Advanced Pricelists"
+msgstr "Napredni cjenik"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__alias_domain
+msgid "Alias Domain"
+msgstr "Domena Aliasa"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_google_calendar
+msgid "Allow the users to synchronize their calendar  with Google Calendar"
+msgstr "Dozvoli korisnicima sinkronizaciju kalendara s Google kalendarom"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_microsoft_calendar
+msgid "Allow the users to synchronize their calendar with Outlook Calendar"
+msgstr "Dozvoli korisnicima sinkronizaciju kalendara s Outlook kalendarom"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_base_import
+msgid "Allow users to import data from CSV/XLS/XLSX/ODS files"
+msgstr "Dozvoli korisnicima uvoz podataka iz CSV/XLS/XLSX/ODS dokumenata"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_hunt_config_settings__group_sale_pricelist
+msgid ""
+"Allows to manage different prices based on rules per category of customers.\n"
+"                Example: 10% for retailers, promotion of 5 EUR on this product, etc."
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_hunt_config_settings__group_multi_currency
+msgid "Allows to work in a multi currency environment"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_hunt_settings_form
+msgid "Apply"
+msgstr "Primjeni"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_voip
+msgid "Asterisk (VoIP)"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_google_drive
+msgid "Attach Google documents to any record"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_attachment_count
+msgid "Attachment Count"
+msgstr "Broj privitaka"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_form
+msgid "Calculate Results"
+msgstr "Izračunaj rezultate"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__calculation_ids
+msgid "Calculation"
+msgstr "Izračun"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__campaign_id
+msgid "Campaign"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_hunt_settings_form
+msgid "Cancel"
+msgstr "Otkaži"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__child_ids
+msgid "Children"
+msgstr "Stavke"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_pad
+msgid "Collaborative Pads"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_egg_color__name
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__color_id
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_colors_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_color_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_calculate_colors_model_tree
+msgid "Color"
+msgstr "Boja"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__color_id
+msgid "Color ID"
+msgstr "ID Boje"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_line_color_form
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_line_form
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_calculate_model_form
+msgid "Colors"
+msgstr "Boje"
+
+#. module: eggs_hunt
+#: model:ir.model,name:eggs_hunt.model_res_company
+msgid "Companies"
+msgstr "Tvrtke"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__company_id
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__company_id
+msgid "Company"
+msgstr "Tvrtka"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__company_informations
+msgid "Company Informations"
+msgstr "Informacije o tvrtci"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__company_name
+msgid "Company Name"
+msgstr "Ime tvrtke"
+
+#. module: eggs_hunt
+#: model:ir.ui.menu,name:eggs_hunt.menu_config_eh
+msgid "Config"
+msgstr "Konfiguracija"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__sum
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_colors_search
+msgid "Count"
+msgstr "Broj"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_egg_color__create_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__create_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__create_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__create_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__create_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__create_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__create_uid
+msgid "Created by"
+msgstr "Kreirao"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_egg_color__create_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__create_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__create_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__create_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__create_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__create_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__create_date
+msgid "Created on"
+msgstr "Datum kreiranja"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__report_footer
+msgid "Custom Report Footer"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__auth_signup_uninvited
+msgid "Customer Account"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__user_default_rights
+msgid "Default Access Rights"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__digest_id
+msgid "Digest Email"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__digest_emails
+msgid "Digest Emails"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__group_discount_per_so_line
+msgid "Discounts"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_egg_color__display_name
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__display_name
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__display_name
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__display_name
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__display_name
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__display_name
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__display_name
+#: model:ir.model.fields,field_description:eggs_hunt.field_res_company__display_name
+msgid "Display Name"
+msgstr "Naziv"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__external_report_layout_id
+msgid "Document Template"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields.selection,name:eggs_hunt.selection__eggs_hunt__state__done
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_form
+msgid "Done"
+msgstr "Završeno"
+
+#. module: eggs_hunt
+#: model:ir.model.fields.selection,name:eggs_hunt.selection__eggs_hunt__state__draft
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_form
+msgid "Draft"
+msgstr "Nacrt"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_egg_color_form
+msgid "Egg Color Form"
+msgstr "Forma boje jaja"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_egg_color_tree
+msgid "Egg Color Tree"
+msgstr "Lista boje jaja"
+
+#. module: eggs_hunt
+#: model:ir.actions.act_window,name:eggs_hunt.action_Eggs_line_color_model
+#: model:ir.ui.menu,name:eggs_hunt.menu_Eggs_line_color_model
+msgid "Egg Colors"
+msgstr "Boje jaja"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__egg_count
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_search
+msgid "Egg Count"
+msgstr "Broj jaja"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__egg_ids
+msgid "Eggs"
+msgstr "Jaja"
+
+#. module: eggs_hunt
+#: model:ir.model,name:eggs_hunt.model_egg_color
+msgid "Eggs Color"
+msgstr "Boja jaja"
+
+#. module: eggs_hunt
+#: model:ir.actions.act_window,name:eggs_hunt.action_Eggs_model
+#: model:ir.model,name:eggs_hunt.model_eggs_hunt
+#: model:ir.module.category,name:eggs_hunt.group_eggs_hunt
+#: model:ir.ui.menu,name:eggs_hunt.menu_Eggs_model
+#: model:ir.ui.menu,name:eggs_hunt.menu_Eggs_model_root
+#: model:ir.ui.menu,name:eggs_hunt.menu_Eggs_new_hunt_model_root
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs-line_model_tree
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_tree
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_hunt_search
+msgid "Eggs Hunt"
+msgstr "Lov na jaja"
+
+#. module: eggs_hunt
+#: model:ir.actions.act_window,name:eggs_hunt.action_Eggs_calculate
+#: model:ir.model,name:eggs_hunt.model_eggs_hunt_calculate
+#: model:ir.ui.menu,name:eggs_hunt.menu_Eggs_calculate
+msgid "Eggs Hunt Calculate"
+msgstr "Kalkulacija lova na jaja"
+
+#. module: eggs_hunt
+#: model:ir.actions.act_window,name:eggs_hunt.action_Eggs_calculate_colors
+#: model:ir.model,name:eggs_hunt.model_eggs_hunt_calculate_colors
+#: model:ir.ui.menu,name:eggs_hunt.menu_Eggs_calculate_colors
+msgid "Eggs Hunt Calculate Colors"
+msgstr "Kalkulacija boja lova na jaja"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_calculate_model_tree
+msgid "Eggs Hunt Calculation"
+msgstr "Kalkulacija lova na jaja"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_hunt_settings_form
+msgid "Eggs Hunt Configuration"
+msgstr "Konfiguracija lova na jaja"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_form
+msgid "Eggs Hunt Form"
+msgstr "Forma lova na jaja"
+
+#. module: eggs_hunt
+#: model:ir.actions.act_window,name:eggs_hunt.action_Eggs_line
+#: model:ir.model,name:eggs_hunt.model_eggs_hunt_line
+#: model:ir.ui.menu,name:eggs_hunt.menu_Eggs_line
+msgid "Eggs Hunt Line"
+msgstr "Stavka lova na jaja"
+
+#. module: eggs_hunt
+#: model:ir.actions.act_window,name:eggs_hunt.action_Eggs_line_color
+#: model:ir.model,name:eggs_hunt.model_eggs_hunt_line_color
+#: model:ir.ui.menu,name:eggs_hunt.menu_Eggs_line_color
+msgid "Eggs Hunt Line Color"
+msgstr "Boja stavke lova na jaja"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_line_color_form
+msgid "Eggs Hunt Line Color Form"
+msgstr "Forma boje stavke lova na jaja"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_line_color_tree
+msgid "Eggs Hunt Line Color Tree"
+msgstr "Lista boje stavke lova na jaja"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_line_form
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_calculate_colors_model_form
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_calculate_model_form
+msgid "Eggs Hunt Line Form"
+msgstr "Forma stavke lova na jaja"
+
+#. module: eggs_hunt
+#: model:res.groups,name:eggs_hunt.group_eggs_hunt_manager2
+msgid "Eggs Hunt Manager"
+msgstr "Voditelj lova na jaja"
+
+#. module: eggs_hunt
+#: model:ir.actions.act_window,name:eggs_hunt.action_eggs_hunt_participants
+#: model:ir.ui.menu,name:eggs_hunt.menu_eggs_hunt_participants
+msgid "Eggs Hunt Participants"
+msgstr "Sudionici lova na jaja"
+
+#. module: eggs_hunt
+#: model:ir.actions.report,name:eggs_hunt.action_report_eggs_hunt
+msgid "Eggs Hunt Report"
+msgstr "Izvještaj lova na jaja"
+
+#. module: eggs_hunt
+#: model:res.groups,name:eggs_hunt.group_eggs_hunt_user1
+msgid "Eggs Hunt User"
+msgstr "Korisnik lova na jaja"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.report_eggs_hunt
+msgid "Eggs Hunt:"
+msgstr "Lov na jaja:"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__auth_signup_reset_password
+msgid "Enable password reset from Login page"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__external_email_server_default
+msgid "External Email Servers"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__fail_counter
+msgid "Fail Mail"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__family_average
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_search
+msgid "Family Average"
+msgstr "Prosjek obitelji"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_form
+msgid "Rezultati po obiteljima"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_follower_ids
+msgid "Followers"
+msgstr "Sljedbenici"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Sljedbenici (Kanal)"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Sljedbenici (Partneri)"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_hunt_config_settings__report_footer
+msgid "Footer text displayed at the bottom of all reports."
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_base_geolocalize
+msgid "GeoLocalize"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_google_spreadsheet
+msgid "Google Spreadsheet"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_hunt_search
+msgid "Group By..."
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__hunt_id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__calculate_id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__hunt_id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__hunt_id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__hunt_id
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_colors_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_color_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_search
+msgid "Hunt"
+msgstr "Lov"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__name_seq
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__hunt_sequence_id
+msgid "Hunt Reference"
+msgstr "Referenca lova"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_res_company__hunt_sequence_id
+msgid "Hunt Sequence"
+msgstr "Sekvenca lova"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_egg_color__id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__id
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__id
+#: model:ir.model.fields,field_description:eggs_hunt.field_res_company__id
+msgid "ID"
+msgstr "ID"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__activity_exception_icon
+msgid "Icon"
+msgstr "Ikona"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__message_needaction
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__message_has_error
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_hunt_config_settings__alias_domain
+msgid ""
+"If you have setup a catch-all email domain redirected to the Odoo server, "
+"enter the domain name here."
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__partner_autocomplete_insufficient_credit
+msgid "Insufficient credit"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_is_follower
+msgid "Is Follower"
+msgstr "Je sljedbenik"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__user_id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__user_id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__user_id
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__user_id
+msgid "Korisnik"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_auth_ldap
+msgid "LDAP Authentication"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.report_eggs_hunt
+msgid "Last Change:"
+msgstr "Zadnja promjena"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_egg_color____last_update
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt____last_update
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate____last_update
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors____last_update
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line____last_update
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color____last_update
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings____last_update
+#: model:ir.model.fields,field_description:eggs_hunt.field_res_company____last_update
+msgid "Last Modified on"
+msgstr "Zadnja promjena"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__name
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_search
+msgid "Last Name"
+msgstr "Prezime"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_egg_color__write_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__write_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__write_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__write_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__write_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__write_uid
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__write_uid
+msgid "Last Updated by"
+msgstr "Zadnju promjenu izvršio"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_egg_color__write_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__write_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__write_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__write_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__write_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__write_date
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__write_date
+msgid "Last Updated on"
+msgstr "Datum zadnje promjene"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__child_id
+msgid "Line"
+msgstr "Stavka"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_color_search
+msgid "Lines"
+msgstr "Stavke"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Glavni privitak"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_account_inter_company_rules
+msgid "Manage Inter Company"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__medium_id
+msgid "Medium"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.ui.menu,name:eggs_hunt.menu_models_eh
+msgid "Models"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__group_multi_currency
+msgid "Multi-Currencies"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_hunt_config_settings__product_pricelist_setting
+msgid ""
+"Multiple prices: Pricelists with fixed price rules by product,\n"
+"Advanced rules: enables advanced price rules for pricelists."
+msgstr ""
+
+#. module: eggs_hunt
+#: code:addons/eggs_hunt/models/eggs_hunt.py:0
+#: code:addons/eggs_hunt/models/eggs_hunt.py:0
+#: code:addons/eggs_hunt/models/eggs_hunt.py:0
+#, python-format
+msgid "New"
+msgstr "Novo"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_colors_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_color_search
+msgid "No Hunt"
+msgstr "Nema Lova"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__active_user_count
+msgid "Number of Active Users"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__company_count
+msgid "Number of Companies"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__language_count
+msgid "Number of Languages"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__paperformat_id
+msgid "Paper format"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__partner_id
+msgid "Participant"
+msgstr "Sudionik"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_form
+msgid "Participants"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_partner_autocomplete
+msgid "Partner Autocomplete"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__person_count
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_calculate_search
+msgid "Person Count"
+msgstr "Broj osoba"
+
+#. module: eggs_hunt
+#: code:addons/eggs_hunt/models/eggs_hunt.py:0
+#, python-format
+msgid "Please select the sequence for the hunt from Settings menu!"
+msgstr "Molim odaberite sekvencu iz menija postavki!"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__group_product_pricelist
+msgid "Pricelists"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__product_pricelist_setting
+msgid "Pricelists Method"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__snailmail_duplex
+msgid "Print Both sides"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__snailmail_color
+msgid "Print In Color"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_sale_product_configurator
+msgid "Product Configurator"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__group_stock_packaging
+msgid "Product Packagings"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_form
+msgid "Recalculate Results"
+msgstr "Ponovno izračunaj rezultate"
+
+#. module: eggs_hunt
+#: model:ir.model,name:eggs_hunt.model_hunt_config_settings
+msgid "Res Config Settings"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields.selection,name:eggs_hunt.selection__eggs_hunt__state__results
+msgid "Results"
+msgstr "Rezultati"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_sale_product_matrix
+msgid "Sales Grid Entry"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.actions.act_window,name:eggs_hunt.action_eggs_hunt_settings
+#: model:ir.ui.menu,name:eggs_hunt.menu_hunt_settings
+msgid "Sequence"
+msgstr "Sekvenca"
+
+#. module: eggs_hunt
+#: model:ir.ui.menu,name:eggs_hunt.menu_Eggs_line_color_model_root
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_hunt_settings_form
+msgid "Settings"
+msgstr "Postavke"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__show_effect
+msgid "Show Effect"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.report_eggs_hunt
+msgid "Signature"
+msgstr "Potpis"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__source_id
+msgid "Source"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__state
+msgid "State"
+msgstr "Status"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_hunt_search
+msgid "State Done"
+msgstr "Status završeno"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__auth_signup_template_user_id
+msgid "Template user for new users created through signup"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__campaign_id
+msgid ""
+"This is a name that helps you keep track of your different campaign efforts,"
+" e.g. Fall_Drive, Christmas_Special"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__medium_id
+msgid "This is the method of delivery, e.g. Postcard, Email, or Banner Ad"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__source_id
+msgid ""
+"This is the source of the link, e.g. Search Engine, another domain, or name "
+"of email list"
+msgstr ""
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_calculate_colors_model_tree
+msgid "Total"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_base_gengo
+msgid "Translate Your Website with Gengo"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__group_uom
+msgid "Units of Measure"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_web_unsplash
+msgid "Unsplash Image Library"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_auth_oauth
+msgid "Use external authentication providers (OAuth)"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__user_id
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_hunt_search
+msgid "User"
+msgstr "Korisnik"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__group_product_variant
+msgid "Variants"
+msgstr "Varijante"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__product_volume_volume_in_cubic_feet
+msgid "Volume unit of measure"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,help:eggs_hunt.field_eggs_hunt__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__product_weight_in_lbs
+msgid "Weight unit of measure"
+msgstr ""
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__name
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__year
+msgid "Year"
+msgstr "Godina"
+
+#. module: eggs_hunt
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.report_eggs_hunt
+msgid "________________________"
+msgstr "________________________"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate__calculation_colors_ids
+msgid "colors"
+msgstr "boje"
+
+#. module: eggs_hunt
+#: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_google_recaptcha
+msgid "reCAPTCHA: Easy on Humans, Hard on Bots"
+msgstr ""
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/js/activity.js:87
+#: code:addons/mail/static/src/js/models/messages/abstract_message.js:109
+#, python-format
+msgid "Yesterday"
+msgstr "Jučer"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/chatter.xml:89
+#, python-format
+msgid "Log note"
+msgstr "Logiraj bilješku"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/chatter.xml:0
+#, python-format
+msgid "Send message"
+msgstr "Pošalji poruku"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/chatter.xml:93
+#, python-format
+msgid "Schedule activity"
+msgstr "Zakažite aktivnost"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/followers.xml:24
+#, python-format
+msgid "Following"
+msgstr "Pratim"

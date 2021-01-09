@@ -1,3 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_results_wizard,access_results_wizard,model_results_wizard,,1,1,1,1
-access_eggs_hunt_results,access_eggs_hunt_results,model_eggs_hunt_results,,1,1,1,1
+
+access_results_wizard_user1,access_results_wizard_user1,model_results_wizard,eggs_hunt.group_eggs_hunt_user1,1,0,0,0
+access_eggs_hunt_results_user1,access_eggs_hunt_results_user1,model_eggs_hunt_results,eggs_hunt.group_eggs_hunt_user1,1,0,0,0
+
+access_results_wizard_manager2,access_results_wizard_manager2,model_results_wizard,eggs_hunt.group_eggs_hunt_manager2,1,1,1,1
+access_eggs_hunt_results_manager2,access_results_wizard_manager2,model_eggs_hunt_results,eggs_hunt.group_eggs_hunt_manager2,1,1,1,1

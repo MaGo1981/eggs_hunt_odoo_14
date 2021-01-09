@@ -50,24 +50,15 @@
                         </tr>
                     </t>
                     <tr>
-                        <td style="border: 0px hidden;width:10%;width:50%;padding-bottom:41px;">
+
+                        <td style="padding-top: 100px; border: 0px hidden;width:50%;">
                             <span class="col-xs-3 text-center">
-                                <p>Signature1</p>
-                            </span>
-                        </td>
-                        <td style="border: 0px hidden;width:10%;width:50%;padding-bottom:41px">
-                            <span class="col-xs-3 text-center">
-                                <p>Signature2</p>
+                                <p style="border: 0px hidden;width:300px;">Signature</p>
                             </span>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="1" style="border: 0px hidden;width:50%;">
-                            <span class="col-xs-3 text-center">
-                                <p style="border: 0px hidden;width:300px;">________________________</p>
-                            </span>
-                        </td>
-                        <td colspan="1" style="border: 0px hidden;width:50%;">
+                        <td colspan="1" style="padding-top: 100px; border: 0px hidden;width:50%;">
                             <span class="col-xs-3 text-center">
                                 <p style="border: 0px hidden;width:300px;">________________________</p>
                             </span>

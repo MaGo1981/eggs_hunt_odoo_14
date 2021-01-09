@@ -163,7 +163,7 @@
 
 
         <menuitem action="action_eggs_hunt_participants" id="menu_eggs_hunt_participants"
-                  parent="menu_Eggs_new_hunt_model_root" sequence="13"/>
+                  parent="menu_Eggs_new_hunt_model_root" sequence="13" groups="group_eggs_hunt_user1"/>
 
     </data>
 </odoo>
