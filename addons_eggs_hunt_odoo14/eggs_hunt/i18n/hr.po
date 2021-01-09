@@ -780,7 +780,7 @@ msgstr "Sudionik"
 #. module: eggs_hunt
 #: model_terms:ir.ui.view,arch_db:eggs_hunt.view_Eggs_model_form
 msgid "Participants"
-msgstr ""
+msgstr "Sudionici"
 
 #. module: eggs_hunt
 #: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_partner_autocomplete
