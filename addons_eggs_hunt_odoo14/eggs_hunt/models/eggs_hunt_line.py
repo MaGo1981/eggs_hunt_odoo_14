@@ -3,6 +3,7 @@
 
 
 from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 
@@ -15,6 +16,17 @@ class EggsHuntLine(models.Model):
     hunt_id = fields.Many2one('eggs.hunt', string = 'Hunt')
     year = fields.Selection(related='hunt_id.name', string='Year', readonly=True)
     egg_ids = fields.One2many('eggs.hunt.line.color', 'child_id', string='Eggs')
-    user_id = fields.Many2one('res.users', 'Korisnik', default=lambda self: self.env.user)
+    user_id = fields.Many2one('res.users', 'User')
 
+    @api.constrains('user_id')
+    def check_user_id(self):
+        assigned_users = self.env['eggs.hunt.line'].search([('id', '!=', self.id)]).user_id
+        existing_participant_line = self.env['eggs.hunt.line'].search([('partner_id.display_name', '=', self.partner_id.display_name),('id', '!=', self.id)])
+        line_users = existing_participant_line.user_id
+        for record in self:
+            if record.user_id in line_users:
+                record.user_id = line_users[0]
+                raise ValidationError(_('This participant already has an assigned user {0} on another record.').format(line_users[-1].name))
+            elif record.user_id in assigned_users:
+                raise ValidationError(_('This user is already assigned to another participant. Please assign another user or create and assign one.'))
 

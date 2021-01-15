@@ -9,6 +9,7 @@
                     <field name="year"/>
                     <field name="partner_id"/>
                     <field name="egg_ids"/>
+                    <field name="user_id" optional="show"/>
                 </tree>
             </field>
         </record>
@@ -20,8 +21,9 @@
             <field name="arch" type="xml">
                 <form string="Eggs Hunt Line Form">
                     <sheet>
-                        <group colspan="12" col="4">
-                            <field name="partner_id" required="True" colspan="4"/>
+                        <group col="4">
+                            <field name="partner_id" required="True" colspan="2"/>
+                            <field name="user_id" colspan="2"/>
                         </group>
                         <notebook>
                             <page string="Colors">
