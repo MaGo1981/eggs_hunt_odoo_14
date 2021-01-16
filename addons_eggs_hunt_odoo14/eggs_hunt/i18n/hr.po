@@ -592,8 +592,8 @@ msgstr "Je sljedbenik"
 #: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_calculate_colors__user_id
 #: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__user_id
 #: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line_color__user_id
-msgid "Korisnik"
-msgstr ""
+msgid "User"
+msgstr "Korisnik"
 
 #. module: eggs_hunt
 #: model:ir.model.fields,field_description:eggs_hunt.field_hunt_config_settings__module_auth_ldap

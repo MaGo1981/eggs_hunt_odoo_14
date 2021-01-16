@@ -3,6 +3,8 @@ import uuid
 from werkzeug.urls import url_encode
 from odoo import api, exceptions, fields, models, _
 from odoo.exceptions import UserError
+from datetime import datetime, timedelta
+
 
 
 class EggsHunt(models.Model):
@@ -24,9 +26,12 @@ class EggsHunt(models.Model):
 
     @api.model
     def year_selection(self):
-        year = 2010
+        year_unformated = datetime.today() - timedelta(days=20*365)
+        year = year_unformated.strftime('%Y')
+        year = int(year)
         year_list = []
-        while year != 2030:
+        currentYear = datetime.now().year
+        while year <= currentYear:
             year_list.append((str(year), str(year)))
             year += 1
         return year_list

@@ -6,7 +6,7 @@
             <div class="oe_screenshot" style="text-align: center;">
                 <h3 class="oe_slogan" style="color:#337ab7;">Game participants compete in collecting eggs of different colors.</h3>
                 <img style="max-width: 100%;" src="https://github.com/MaGo1981/eggs_hunt_odoo_14/blob/develop/addons_eggs_hunt_odoo14/eggs_hunt/static/description/eggs_hunt1.png"/><br><br>
-                <h3 class="oe_slogan" style="color:#337ab7;">Eggs Hunt has an icon in the main menu. There are two security groups: Eggs Hunt User can only read the data, and Eggs Hunt Manager can read, write, create, and delete.</h3>
+                <h3 class="oe_slogan" style="color:#337ab7;">Eggs Hunt has an icon in the main menu. Every Hunt Participant can be assigned to a user. Participant can have only one user assigned, and user can be assigned to only one participant. Participant can appear in different Egg Hunts. There are two security groups: Eggs Hunt User group who can work only with hunts where logged in user is assigned to a participant, and Eggs Hunt Manager group where logged in user can read, write, create, and delete all hunt records.</h3>
                 <img style="max-width: 100%;" src="https://github.com/MaGo1981/eggs_hunt_odoo_14/blob/develop/addons_eggs_hunt_odoo14/eggs_hunt/static/description/eggs_hunt_icon.png"/><br><br>
                 <h3 class="oe_slogan" style="color:#337ab7;">Clicking the icon will take you to the tree view.</h3>
                 <img style="max-width: 100%;" src="https://github.com/MaGo1981/eggs_hunt_odoo_14/blob/develop/addons_eggs_hunt_odoo14/eggs_hunt/static/description/eggs_hunt_basic_tree_view.png"/><br><br>
