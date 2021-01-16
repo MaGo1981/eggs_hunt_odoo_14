@@ -23,20 +23,6 @@ class EggsHunt(models.Model):
                               ("done", "Done")], "State", default="draft", tracking=True)
     company_id = fields.Many2one('res.company', 'Company', default=lambda self: self.env.company)
 
-    @api.depends('child_ids.user_id')
-    def _compute_is_visible(self):
-        for hunt in self.env['eggs.hunt'].sudo().search([]):
-            hunt.is_visible1 = False
-            hunt.stored_is_visible = False
-            for line in hunt.child_ids:
-                if line.user_id.id == self.env.user.id:
-                    hunt.is_visible1 = True
-                    hunt.stored_is_visible = True
-
-
-    is_visible1 = fields.Boolean(compute='_compute_is_visible', store=False, readonly=False)
-    stored_is_visible = fields.Boolean(string='Stored is visible')
-
 
     @api.model
     def year_selection(self):

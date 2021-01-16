@@ -43,10 +43,13 @@
                     <field name="year"/>
                     <field name="partner_id"/>
                     <field name="egg_ids"/>
+                    <field name="user_id"/>
                     <filter string="2018" name="year2018" domain="[('year','=','2018')]"/>
                     <filter string="2019" name="year2019" domain="[('year','=','2019')]"/>
                     <filter string="2020" name="year2020" domain="[('year','=','2020')]"/>
                     <filter string="Hunt" name="year" domain="" context="{'group_by':'hunt_id'}"/>
+                    <filter string="Participant" name="participant" domain="" context="{'group_by':'partner_id'}"/>
+                    <filter string="User" name="user" domain="" context="{'group_by':'user_id'}"/>
                 </search>
             </field>
         </record>

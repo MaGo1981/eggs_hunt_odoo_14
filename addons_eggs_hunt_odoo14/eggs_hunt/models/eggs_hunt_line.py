@@ -30,3 +30,22 @@ class EggsHuntLine(models.Model):
             elif record.user_id in assigned_users:
                 raise ValidationError(_('This user is already assigned to another participant. Please assign another user or create and assign one.'))
 
+    @api.constrains('user_id')
+    def check_user_id(self):
+        for record in self:
+            assigned_lines = self.env['eggs.hunt.line'].search([('id', '!=', record.id)])
+            assigned_users = assigned_lines.user_id
+            assigned_partners = assigned_lines.partner_id
+            existing_participant_line = self.env['eggs.hunt.line'].search([('partner_id.display_name', '=', self.partner_id.display_name),('id', '!=', self.id)])
+            line_users = existing_participant_line.user_id
+            if len(line_users) > 0 and record.user_id.display_name != line_users[0].display_name and record.user_id.id != False:
+                raise ValidationError(_('This participant {1} already has an assigned user {0} on another record. Please assign the same user to this record.').format(line_users[-1].name, existing_participant_line[0].partner_id.name))
+            if record.partner_id in assigned_partners:
+                id_list=[]
+                for id in assigned_partners:
+                    id_list.append(id)
+                index = id_list.index(record.partner_id)
+                if record.partner_id.display_name != assigned_partners[index].display_name:
+                    raise ValidationError(_('This user {0} is already assigned to another participant. Please assign another user or create and assign one.').format(record.user_id.display_name))
+            elif record.user_id in assigned_users:
+                raise ValidationError(_('This user {0} is already assigned to another participant. Please assign another user or create and assign one.').format(record.user_id.display_name))
