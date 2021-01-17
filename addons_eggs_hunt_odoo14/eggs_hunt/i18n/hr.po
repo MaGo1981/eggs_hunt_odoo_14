@@ -774,6 +774,7 @@ msgstr ""
 
 #. module: eggs_hunt
 #: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt_line__partner_id
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_search
 msgid "Participant"
 msgstr "Sudionik"
 
@@ -982,6 +983,7 @@ msgstr ""
 #. module: eggs_hunt
 #: model:ir.model.fields,field_description:eggs_hunt.field_eggs_hunt__user_id
 #: model_terms:ir.ui.view,arch_db:eggs_hunt.view_eggs_hunt_search
+#: model_terms:ir.ui.view,arch_db:eggs_hunt.eggs_hunt_line_search
 msgid "User"
 msgstr "Korisnik"
 
@@ -1066,3 +1068,46 @@ msgstr "Zakažite aktivnost"
 #, python-format
 msgid "Following"
 msgstr "Pratim"
+
+#. module: base
+#: code:addons/base/models/res_users.py:0
+#, python-format
+msgid "Other"
+msgstr "Ostalo"
+
+#. module: eggs_hunt
+#: code:addons/eggs_hunt/models/eggs_hunt_line.py:0
+#, python-format
+msgid "This participant already has an assigned user {0} on another record."
+msgstr "Ovom sudioniku je već dodijeljen korisnik {0} na nekoj drugoj stavci"
+
+#. module: eggs_hunt
+#: code:addons/eggs_hunt/models/eggs_hunt_line.py:0
+#, python-format
+msgid ""
+"This participant {1} already has an assigned user {0} on another record. "
+"Please assign the same user to this record."
+msgstr ""
+"Ovom sudioniku {1} je već dodijeljen korisnik {0} na nekoj drugoj stavci. "
+"Molim dodijelite istog korisnika i ovoj stavci."
+
+#. module: eggs_hunt
+#: code:addons/eggs_hunt/models/eggs_hunt_line.py:0
+#, python-format
+msgid ""
+"This user is already assigned to another participant. Please assign another "
+"user or create and assign one."
+msgstr ""
+"Ovaj korisnik je već dodijeljen nekom drugom sudioniku. Molim dodjelite drugog "
+"korisnika ili kreirajte novog korisnika i dodijelite ga."
+
+#. module: eggs_hunt
+#: code:addons/eggs_hunt/models/eggs_hunt_line.py:0
+#: code:addons/eggs_hunt/models/eggs_hunt_line.py:0
+#, python-format
+msgid ""
+"This user {0} is already assigned to another participant. Please assign "
+"another user or create and assign one."
+msgstr ""
+"Ovaj korisnik {0} je već dodijeljen drugom sudioniku. Molim dodijelite "
+"drugog korisnika ili kreirajte novog korisnika i dodijelite ga."
