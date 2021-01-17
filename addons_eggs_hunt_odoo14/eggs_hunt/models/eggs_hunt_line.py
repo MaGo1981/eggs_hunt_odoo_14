@@ -47,5 +47,5 @@ class EggsHuntLine(models.Model):
                 index = id_list.index(record.partner_id)
                 if record.partner_id.display_name != assigned_partners[index].display_name:
                     raise ValidationError(_('This user {0} is already assigned to another participant. Please assign another user or create and assign one.').format(record.user_id.display_name))
-            elif record.user_id in assigned_users:
+            if record.user_id in assigned_users:
                 raise ValidationError(_('This user {0} is already assigned to another participant. Please assign another user or create and assign one.').format(record.user_id.display_name))
